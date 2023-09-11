@@ -21,7 +21,7 @@ function App() {
   }, [])
 
   const addFoodData = () =>{
-    Axios.post("http://server/insert",
+    Axios.post("http://server.onrender.com/insert",
     {
       foodName:foodName, 
       description:description
@@ -29,12 +29,12 @@ function App() {
   };
 
 const UpdateFoodData = (id) =>{
-    Axios.put("http://server/update", {
+    Axios.put("http://server.onrender.com/update", {
       id:id, newFoodName:newFoodName})
   }
 
   const DeleteData = (id) =>{
-    Axios.delete(`http://server/delete/${id}`)
+    Axios.delete(`http://server.onrender.com/delete/${id}`)
       
   };
 
